@@ -20,11 +20,11 @@ public class ParalaxEffect : MonoBehaviour
 
         transform.position = new Vector3(startPos + distance, transform.position.y, transform.position.z);
 
-        if (temp > startPos + length)
+        if (temp > startPos + length*2)
         {
             startPos += length;
         }
-        else if(temp <  startPos - length)
+        else if(temp <  startPos - length * 2)
         {
             startPos -= length;
         }

@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Jumping()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space) && canJump)
         {
             canJump = false;
             Invoke("Jump", jumpDelay);
