@@ -43,4 +43,8 @@ public class MenuManager : MonoBehaviour
             AudioListener.pause = false;
         }
     }
+    public void GoMenu()
+    {
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
 }
